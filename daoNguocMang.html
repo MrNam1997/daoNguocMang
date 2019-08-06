@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reverse() {
+        let arr = [-1, 2, 5, 10, 41, 23];
+        document.write(arr + "<br>");
+        let fisrt = 0;
+        let last = arr.length - 1;
+        while (fisrt < last) {
+            let b = arr[fisrt];
+            arr[fisrt] = arr[last];
+            arr[last] = b;
+            fisrt++;
+            last--;
+        }
+        document.write("Converse " + arr);
+    }
+
+    reverse();
+</script>
+
+</body>
+</html>
